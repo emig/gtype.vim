@@ -1,5 +1,7 @@
-gtype
-=====
+gtype.vim
+=========
+
+Is a Vim plugin that allows you to run the buffer's current line as a Gypist excercice
 
 Dependencies
 ---
