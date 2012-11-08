@@ -19,7 +19,7 @@ endif
 
 let g:loaded_gtype = "true"
 
-rubyfile %:h/../ruby/gtype.rb
+rubyfile %:p:h/../ruby/gtype.rb
 
 function! Gtype()
 ruby << EOF
