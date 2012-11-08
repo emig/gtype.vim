@@ -1,13 +1,16 @@
-#it has to prepend a space: to each line
-#and open the gtypist with the result
+# Creates a simple drill excercise for Gytypist
+# see  http://www.gnu.org/software/gtypist/doc/#Script-file-commands for instructions on
+# the gtypist excercise format
+
+# Opened class string
 class String
 
-  #if is the first line
+  #if is not the first line
   def to_gtypist
    " :#{self}"
   end
 
-  #if is not the first line
+  #if is the first line
   def to_gtypist_first_line
    "D:#{self}"
   end
@@ -23,6 +26,7 @@ class Gtype
    @path = filename_path_and_name
   end
 
+  # modifies the args strings with the correct format
   def process
     res = []
     @args.each_with_index do |s, index|
@@ -32,6 +36,8 @@ class Gtype
   end
 
 
+  # write the temporary fle that holds the
+  # excercice that will be passed to gtypist
   def write
     File.open(@path, 'w') do |f|
       f.puts process()
