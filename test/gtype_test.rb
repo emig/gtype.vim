@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../ruby/gtype'
+require  File.expand_path("../ruby/gtype", __FILE__)
 
 class StringTest < Test::Unit::TestCase
   def test_to_gtypist_first_line
