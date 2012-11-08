@@ -19,9 +19,19 @@ endif
 
 let g:loaded_gtype = "true"
 
+rubyfile %:h/../ruby/gtype.rb
+
 function! Gtype()
-  silent execute '. write !ruby ./gtype.rb' | silent !gtypist /tmp/selectionXXX.typ
-  redraw!
+ruby << EOF
+  current_line_content =  VIM::Buffer.current.line
+  if current_line_content.length > 0
+    Gtype.new([current_line_content], '/tmp/selectionXXX.typ').write()
+    VIM.command(':silent !gtypist /tmp/selectionXXX.typ')
+    VIM.command(':redraw!')
+  else 
+    print "current line is empty"
+  end
+EOF
 endfunction
 
 
