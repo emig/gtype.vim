@@ -18,11 +18,15 @@ CONTENTS *gtype-contents*
     3. Bugs ............................ |GtypeBugs|
     4. Contributing .................... |GtypeContributing|
     5. Changelog ....................... |GtypeChangelog|
+    5. Credits ......................... |Credits|
 
 ==============================================================================
 1: Usage                                 *GtypeUsage*
 
-The :Gtype command will run the current line on gtypist
+no keybidings are provided. It is encouraged to define your own keybindings
+to call Gytpist function
+usage example. select a range and call Gtypist() function 
+:1,4 call Gtypist()
 
 ==============================================================================
 2. License                               *GtypeLicense*
@@ -46,7 +50,15 @@ GitHub: http://github.com/emig/gtype
 ==============================================================================
 5. Changelog                            *GtypeChangelog*
 
+v0.0.2 beta
+  * Changing behaviour, made function a range function
+  * cleaned empty lines, and start of line empty spaces
+
 v0.0.1 beta
   * Initial beta release.
 
 ==============================================================================
+6. Credits                              *Credits*
+  
+Thanks to Steve Losh for his book Learn Vimscript the Hard Way, http://learnvimscriptthehardway.stevelosh.com , from which I got most of the documentation tips.
+

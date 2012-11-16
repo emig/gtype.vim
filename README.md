@@ -22,6 +22,6 @@ Use [pathogene](https://github.com/tpope/vim-pathogen) or [vundle](https://githu
 Usage
 ---
 
-select a range and call Gtypist() function *example*
+select a range and call Gtypist() function
 
-```:1,4 call Gtypist```
+```:1,4 call Gtypist()```
