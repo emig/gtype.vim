@@ -1,7 +1,10 @@
 gtype.vim
 =========
 
-Is a Vim plugin that allows you to run the buffer's current line as a [Gypist Drill excercice](http://www.gnu.org/software/gtypist/doc/#Script-file-commands)
+Practice touch typing real code ... your code. 
+Gtype is a Vim plugin that allows you to source a text selection as a [Gypist Drill excercice](http://www.gnu.org/software/gtypist/doc/#Script-file-commands).
+Once the excercice is finished or cancelled, you get back to your normal untouched Vim session.
+
 
 Dependencies
 ---
@@ -14,4 +17,11 @@ Dependencies
 Installation
 ---
 
-Use pathogen [pathogene](https://github.com/tpope/vim-pathogen) or [vundle](https://github.com/gmarik/vundle)
+Use [pathogene](https://github.com/tpope/vim-pathogen) or [vundle](https://github.com/gmarik/vundle)
+
+Usage
+---
+
+select a range and call Gtypist() function
+*example*
+  :1,4 call Gtypist
