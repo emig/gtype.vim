@@ -113,3 +113,4 @@ ruby << LEOF
 LEOF
 endfunction
 command Gtype :'<, '>call Gtype()
+"vmap <Leader>g :call Gtype()<CR>
