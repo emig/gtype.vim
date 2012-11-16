@@ -24,4 +24,4 @@ Usage
 
 select a range and call Gtypist() function
 *example*
-  :1,4 call Gtypist
+```:1,4 call Gtypist```
